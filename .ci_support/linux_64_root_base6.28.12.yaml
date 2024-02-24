@@ -15,6 +15,6 @@ jsoncpp:
 ldas_tools_framecpp:
 - '2.9'
 root_base:
-- 6.30.2
+- 6.28.12
 target_platform:
 - linux-64
