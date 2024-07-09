@@ -18,12 +18,13 @@ source:
 build:
   error_overlinking: true
   error_overdepending: true
-  number: 2
+  number: 3
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - make
     - pkg-config
   host:
@@ -49,6 +50,7 @@ outputs:
     requirements:
       build:
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
     files:
       - include/gds/calc_engine/
       - lib/libcalcengn.*
@@ -83,6 +85,7 @@ outputs:
     requirements:
       build:
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
       host:
         - gds-base >={{ gds_base_version }}
         - gds-base-gdstrig >={{ gds_base_version }}
@@ -158,6 +161,7 @@ outputs:
     requirements:
       build:
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
     files:
       - share/gds/macros/
       - share/gds/.rootrc
