@@ -1,5 +1,5 @@
 {% set name = "gds-dmt" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 # dependencies
 {% set gds_base_version = "3.0.0" %}
@@ -13,12 +13,12 @@ package:
 
 source:
   url: https://software.igwn.org/sources/source/{{ name }}-{{ version }}.tar.gz
-  sha256: 6fd4b58a3c730592212bbb5f9d776c459bb6ee59262d9f672965e0d8ffc648e9
+  sha256: a30b770452c14faf469586e4c522615cfb96454d5a1c4f34210d00afc477bffb
 
 build:
   error_overlinking: true
   error_overdepending: true
-  number: 3
+  number: 0
   skip: true  # [win]
 
 requirements:
