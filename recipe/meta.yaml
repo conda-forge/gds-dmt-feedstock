@@ -1,10 +1,10 @@
 {% set name = "gds-dmt" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 # dependencies
-{% set gds_base_version = "3.0.0" %}
-{% set gds_lsmp_version = "3.0.0" %}
-{% set gds_frameio_version = "3.0.0" %}
+{% set gds_base_version = "3.0.1" %}
+{% set gds_lsmp_version = "3.0.1" %}
+{% set gds_frameio_version = "3.0.1" %}
 {% set ldas_tools_framecpp_version = "2.5.8" %}
 
 package:
@@ -13,13 +13,14 @@ package:
 
 source:
   url: https://software.igwn.org/sources/source/{{ name }}-{{ version }}.tar.gz
-  sha256: 6fd4b58a3c730592212bbb5f9d776c459bb6ee59262d9f672965e0d8ffc648e9
+  sha256: a30b770452c14faf469586e4c522615cfb96454d5a1c4f34210d00afc477bffb
 
 build:
   error_overlinking: true
   error_overdepending: true
-  number: 3
+  number: 0
   skip: true  # [win]
+  skip: true  # [osx and root_base == "6.30.4"]
 
 requirements:
   build:
@@ -133,7 +134,7 @@ outputs:
       - lib/pkgconfig/gdsdmtenv.pc
       - lib/pkgconfig/gdsdmtezcalib.pc
       - lib/pkgconfig/gdsdmtosc.pc
-      - lib/pkgconfig/gdsdmtplotpkg.pc
+      - lib/pkgconfig/gdsplotpkg.pc
     test:
       requires:
         - pkg-config
@@ -146,7 +147,7 @@ outputs:
         - pkg-config --print-errors --exact-version "{{ version }}" gdsdmtenv
         - pkg-config --print-errors --exact-version "{{ version }}" gdsdmtezcalib
         - pkg-config --print-errors --exact-version "{{ version }}" gdsdmtosc
-        - pkg-config --print-errors --exact-version "{{ version }}" gdsdmtplotpkg
+        - pkg-config --print-errors --exact-version "{{ version }}" gdsplotpkg
     about:
       home: https://computing.docs.ligo.org/daswgweb/projects/dmt.html
       license: GPL-2.0-only
