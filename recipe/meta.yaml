@@ -20,6 +20,7 @@ build:
   error_overdepending: true
   number: 0
   skip: true  # [win]
+  skip: true  # [osx and root_base == "6.30.4"]
 
 requirements:
   build:
