@@ -133,7 +133,7 @@ outputs:
       - lib/pkgconfig/gdsdmtenv.pc
       - lib/pkgconfig/gdsdmtezcalib.pc
       - lib/pkgconfig/gdsdmtosc.pc
-      - lib/pkgconfig/gdsdmtplotpkg.pc
+      - lib/pkgconfig/gdsplotpkg.pc
     test:
       requires:
         - pkg-config
@@ -146,7 +146,7 @@ outputs:
         - pkg-config --print-errors --exact-version "{{ version }}" gdsdmtenv
         - pkg-config --print-errors --exact-version "{{ version }}" gdsdmtezcalib
         - pkg-config --print-errors --exact-version "{{ version }}" gdsdmtosc
-        - pkg-config --print-errors --exact-version "{{ version }}" gdsdmtplotpkg
+        - pkg-config --print-errors --exact-version "{{ version }}" gdsplotpkg
     about:
       home: https://computing.docs.ligo.org/daswgweb/projects/dmt.html
       license: GPL-2.0-only
