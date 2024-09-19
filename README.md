@@ -72,13 +72,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_root_base6.30.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21053&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-dmt-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.30.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_root_base6.32.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21053&branchName=main">
