@@ -15,7 +15,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '17'
 jsoncpp:
-- 1.9.5
+- 1.9.6
 ldas_tools_framecpp:
 - '2.9'
 libboost_headers:
