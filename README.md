@@ -22,15 +22,6 @@ Package license: GPL-2.0-only
 
 Summary: GDS DMT package Core libraries
 
-About gds-dmt-root
-------------------
-
-Home: https://computing.docs.ligo.org/daswgweb/projects/dmt.html
-
-Package license: GPL-2.0-only
-
-Summary: Root wrapper for gds classes
-
 About gds-dmt-monitors
 ----------------------
 
@@ -39,6 +30,15 @@ Home: https://computing.docs.ligo.org/daswgweb/projects/dmt.html
 Package license: GPL-2.0-only
 
 Summary: Libraries used by DMT Monitor programs
+
+About gds-dmt-root
+------------------
+
+Home: https://computing.docs.ligo.org/daswgweb/projects/dmt.html
+
+Package license: GPL-2.0-only
+
+Summary: Root wrapper for gds classes
 
 Current build status
 ====================
@@ -58,31 +58,31 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_root_base6.32.10</td>
+              <td>linux_64_root_base6.34.10</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21053&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-dmt-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.32.10" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-dmt-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.34.10" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_root_base6.34.4</td>
+              <td>linux_64_root_base6.36.04</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21053&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-dmt-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.34.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-dmt-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.36.04" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_root_base6.32.10</td>
+              <td>osx_64_root_base6.34.10</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21053&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-dmt-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.32.10" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-dmt-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.34.10" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_root_base6.34.4</td>
+              <td>osx_64_root_base6.36.04</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21053&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-dmt-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.34.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-dmt-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.36.04" alt="variant">
                 </a>
               </td>
             </tr>
