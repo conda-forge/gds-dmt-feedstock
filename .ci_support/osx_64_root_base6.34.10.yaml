@@ -13,7 +13,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '18'
+- '19'
 jsoncpp:
 - 1.9.6
 ldas_tools_framecpp:
@@ -23,6 +23,6 @@ libboost_headers:
 macos_machine:
 - x86_64-apple-darwin13.4.0
 root_base:
-- 6.32.10
+- 6.34.10
 target_platform:
 - osx-64
