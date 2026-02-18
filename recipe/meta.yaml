@@ -25,7 +25,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - gnuconfig  # [osx and arm64]
+    - gnuconfig
     - make
     - pkg-config
   host:
