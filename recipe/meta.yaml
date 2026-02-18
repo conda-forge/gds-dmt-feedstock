@@ -76,7 +76,6 @@ outputs:
   - name: gds-dmt-monitors
     build:
       error_overlinking: true
-      error_overdepending: true
       ignore_run_exports:
         # unused link removed on macOS
         - gds-lsmp  # [osx]
