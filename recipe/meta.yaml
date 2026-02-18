@@ -14,6 +14,8 @@ package:
 source:
   url: https://software.igwn.org/sources/source/{{ name }}-{{ version }}.tar.gz
   sha256: a30b770452c14faf469586e4c522615cfb96454d5a1c4f34210d00afc477bffb
+  patches:
+    - fix-datenv-link.patch
 
 build:
   error_overlinking: true
@@ -25,7 +27,10 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
+    - autoconf
+    - automake
     - gnuconfig
+    - libtool
     - make
     - pkg-config
   host:

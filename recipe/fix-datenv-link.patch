@@ -1,0 +1,11 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -75,6 +75,8 @@ AC_GDS_ROOT_OBJECTS
+ PKG_CHECK_MODULES([DATENV],[
+   gdscntr >= ${GDS_CNTR_VERSION}
+   gdsframeio >= ${GDS_FRAMEIO_VERSION}
++  gdsmonitor >= ${GDS_MONITOR_VERSION}
++  gdstrig >= ${GDS_TRIG_VERSION}
+   gdsxsil >= ${GDS_XSIL_VERSION}
+   ])
+ PKG_CHECK_MODULES([DMTOSC],[

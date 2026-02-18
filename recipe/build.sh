@@ -5,6 +5,9 @@ set -e
 # update autotools config
 cp -f ${BUILD_PREFIX}/share/gnuconfig/config.* ${SRC_DIR}/config/
 
+# regenerate configure after patching configure.ac
+autoreconf --install --force
+
 mkdir -p _build
 cd _build
 
