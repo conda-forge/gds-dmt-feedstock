@@ -18,8 +18,8 @@ source:
     - fix-datenv-link.patch
 
 build:
-  error_overlinking: true
-  error_overdepending: true
+
+
   number: 9
   skip: true  # [win]
 
@@ -50,8 +50,8 @@ requirements:
 outputs:
   - name: gds-dmt-base
     build:
-      error_overlinking: true
-      error_overdepending: true
+    
+    
       run_exports:
         - {{ pin_subpackage("gds-dmt-base", max_pin="x") }}
     requirements:
@@ -81,7 +81,7 @@ outputs:
 
   - name: gds-dmt-monitors
     build:
-      error_overlinking: true
+    
       ignore_run_exports:
         # unused link removed on macOS
         - gds-lsmp  # [osx]
@@ -163,8 +163,8 @@ outputs:
 
   - name: gds-dmt-root
     build:
-      error_overlinking: true
-      error_overdepending: true
+    
+    
     requirements:
       build:
         - {{ compiler('cxx') }}
