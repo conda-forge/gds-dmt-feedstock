@@ -2,6 +2,11 @@
 
 set -e
 
+# update autotools config for arm64 support
+if [[ -d "${BUILD_PREFIX}/share/gnuconfig" ]]; then
+  cp -f ${BUILD_PREFIX}/share/gnuconfig/config.* ${SRC_DIR}/config/
+fi
+
 mkdir -p _build
 cd _build
 
