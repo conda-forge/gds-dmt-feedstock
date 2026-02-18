@@ -39,6 +39,7 @@ requirements:
     - ldas-tools-framecpp >={{ ldas_tools_framecpp_version }}
     - libboost-headers
     - root_base
+    - root_cxx_standard
 
 outputs:
   - name: gds-dmt-base
@@ -97,6 +98,7 @@ outputs:
         - ldas-tools-al
         - ldas-tools-framecpp
         - root_base
+        - root_cxx_standard
       run:
         - gds-services >={{ gds_base_version }}
     files:
