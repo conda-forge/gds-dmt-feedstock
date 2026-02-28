@@ -14,17 +14,21 @@ package:
 source:
   url: https://software.igwn.org/sources/source/{{ name }}-{{ version }}.tar.gz
   sha256: a30b770452c14faf469586e4c522615cfb96454d5a1c4f34210d00afc477bffb
+  patches:
+    - fix-datenv-link.patch
 
 build:
-  error_overlinking: true
-  error_overdepending: true
-  number: 8
+  number: 9
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
+    - autoconf
+    - automake
+    - gnuconfig
+    - libtool
     - make
     - pkg-config
   host:
@@ -39,12 +43,11 @@ requirements:
     - ldas-tools-framecpp >={{ ldas_tools_framecpp_version }}
     - libboost-headers
     - root_base
+    - root_cxx_standard
 
 outputs:
   - name: gds-dmt-base
     build:
-      error_overlinking: true
-      error_overdepending: true
       run_exports:
         - {{ pin_subpackage("gds-dmt-base", max_pin="x") }}
     requirements:
@@ -74,8 +77,6 @@ outputs:
 
   - name: gds-dmt-monitors
     build:
-      error_overlinking: true
-      error_overdepending: true
       ignore_run_exports:
         # unused link removed on macOS
         - gds-lsmp  # [osx]
@@ -97,6 +98,7 @@ outputs:
         - ldas-tools-al
         - ldas-tools-framecpp
         - root_base
+        - root_cxx_standard
       run:
         - gds-services >={{ gds_base_version }}
     files:
@@ -155,9 +157,6 @@ outputs:
       summary: Libraries used by DMT Monitor programs
 
   - name: gds-dmt-root
-    build:
-      error_overlinking: true
-      error_overdepending: true
     requirements:
       build:
         - {{ compiler('cxx') }}
