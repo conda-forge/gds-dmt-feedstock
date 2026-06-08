@@ -21,13 +21,13 @@ ldas_tools_framecpp:
 libboost_headers:
 - '1.88'
 macos_machine:
-- arm64-apple-darwin20.0.0
+- x86_64-apple-darwin13.4.0
 root_base:
-- 6.38.0
+- 6.36.10
 root_cxx_standard:
 - '20'
 target_platform:
-- osx-arm64
+- osx-64
 zip_keys:
 - - root_base
   - root_cxx_standard
